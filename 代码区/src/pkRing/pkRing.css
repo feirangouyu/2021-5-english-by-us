@@ -1,0 +1,281 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.219);
+  min-width: 1600px;
+}
+
+/* 头部样式 */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  min-width: 1300px !important;
+  z-index: 99;
+  border-bottom: 1px solid rgb(57,125,252);
+}
+
+header .logo {
+  width: 50px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+header .logo img {
+  width: 40px;
+}
+
+header .logo h2 {
+  position: absolute;
+  width: 100px;
+  top: -5px;
+  left: 60px;
+  color: rgb(57,125,252);
+}
+
+header .logo h5 {
+  position: absolute;
+  width: 100px;
+  top: 28px;
+  left: 60px;
+  color: rgb(57,125,252);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* 玩家盒子 */
+.left {
+  width: 300px;
+  height: 800px;
+  padding-top: 100px;
+  margin-right: 100px;
+  text-align: center;
+  line-height: 50px;
+  border-right: 1px solid rgb(57,125,252);
+}
+.left .user_icon {
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+
+.title_num ,.integral{
+  color: rgb(57,125,252);
+  margin:0px 5px;
+  font-weight: bold;
+}
+
+h2 {
+  position: relative;
+  top: 20px;
+  left:0;
+  color:rgb(57,125,252);
+}
+
+/* 用户盒子 */
+.right {
+  margin: 100px 0px;
+  padding: 20px 40px;
+  width: 1000px;
+  height: 600px;
+  border: 1px solid rgb(57,125,252);
+  border-radius: 5px;
+}
+
+.right .user_icon {
+  position: relative;
+  top: 10px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.right .user_data p {
+  display: inline-block;
+  margin: 20px;
+}
+
+.right .user_data p:nth-child(2) {
+  margin-right: 55%;
+}
+
+.right .time {
+  margin-left: 90%;
+}
+.head > span:first-child,
+.right .next {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.head > span:first-child {
+  top: 80px;
+  left: 120px;
+  box-shadow: 0px 0px 2px 2px rgba(108, 160, 255, 0.562);
+  color: rgb(57,125,252);
+}
+
+.right .next {
+  position: relative;
+  top: 80px;
+  left: 710px;
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgb(57,125,252);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.title_options > div {
+  padding-left: 150px;
+}
+
+.right .title {
+  margin: 30px auto;
+  padding-top: 40px;
+  width: 80%;
+  height: 350px;
+  line-height: 60px;
+  box-shadow: 0px 0px 2px 2px rgba(108, 160, 255, 0.562);
+  border-radius: 10px;
+  font-size: large;
+}
+
+.title_content {
+  margin-left: -100px;
+}
+
+.title_content span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.right .titles {
+  width: 100%;
+  text-align: center;
+}
+
+.titles > div:nth-child(1) {
+  display: block;
+}
+
+.titles > div {
+  display: none;
+}
+
+.title_options span {
+  display: inline-block;
+  width: 400px;
+  text-align: start;
+  margin-left: 10px;
+}
+
+
+.player-wait,.pk-end {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 2px 2px rgba(108, 160, 255, 0.562);
+  background-color: white;
+  z-index: 999;
+}
+.start-btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(57,125,252);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player-wait > div {
+  margin: 80px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline
+}
+
+.player-wait  img,.pk-end img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.pk-end {
+  display: none;
+  
+}
+
+.pk-end h3 {
+  margin: 15px;
+}
+
+.pk-end .win_user {
+  color: rgb(57,125,252);
+}
+
+.pk-end > div {
+  display: flex;
+  height: 70%;
+}
+
+.pk-end > div div{
+ width: 300px;
+ height: 100%;
+ line-height: 50px;
+}
+
+.pk-end > div div:first-child {
+  border-right: 1px solid rgb(57,125,252);
+}
+
+.watch {
+  display: flex;
+  margin: 50px auto;
+  width: 1000px;
+  height: 600px;
+
+}
+
+.watch > div {
+  width:100%;
+  padding-top: 100px ;
+  padding-left:200px;
+  margin-right: 5px;
+  border: 1px solid rgb(57,125,252);
+  line-height: 80px;
+}
+
+.watch .title_num,.watch .integral {
+  color: rgb(57,125,252);
+}
+
+
+.watch  img{
+  width: 80px;
+  border-radius: 50%;
+}
+
+.leitai {
+  position: absolute;
+  top: 80%;
+  right: 100px;
+}

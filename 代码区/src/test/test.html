@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>试卷答题页面</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+  <div class="test">
+    <div class="test-box">
+      <!-- 答题页面头部信息 -->
+      <div class="header">
+        <a href="javascript:;" class="back" >< 返回</a> 
+        <h2></h2>
+        <p>题量: <span class="num"></span>  
+          满分: <span class="score"></span></p>
+        <p>在线答题计时：<span class="time">00:00:00</span></p>
+      </div>
+      <!-- 答题页面题目详情 -->
+      <div class="titles">
+        <!-- 第一部分：单项选择题 -->
+        <h4>一. 单项选择题<span></span></h4>
+        <div class="title-box type1"> </div>
+
+        <!-- 第二部分：翻译题 -->
+        <h4>二. 翻译题<span></span></h4>
+        <div class="title-box type2"></div>
+
+        <div class="title-box type3"></div>
+
+      </div>
+      <!-- 答题页面底部信息 -->
+      <div class="footer">
+        <button>提交答题</button>
+      </div>
+    </div>
+
+    <!-- 提交答题后的显示信息 -->
+    <div class="result">
+      <p>感谢您的答题！！</p>
+      <p>您的总答题数: <span>0</span></p>
+      <p>您的答对题数: <span>0</span></p>
+      <p>您的总分: <span>0</span></p>
+      <p>您的做题时间为:<span>0</span></p>
+      <button id="resultRead">查看答案</button> <button class="back">退出</button>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="test.js"></script>
+</body>
+
+</html>

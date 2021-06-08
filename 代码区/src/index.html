@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>一遍过</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo1.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/rankTable.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="./images/logo1.svg">
+            <h2>一 遍 过</h2>
+            <h5>yibianguo.com</h5>
+        </div>
+        <!-- <div class="time">倒计时</div> -->
+        <div class="user" id="onLogin">
+            <img class="icon-src" src="./images/nologin.svg">
+            <span class="name">登录</span>
+        </div>
+    </header>
+    <nav id="navbar">
+        <div>
+            <img src="images/nav.svg">
+            导航
+        </div>
+        <ul>
+            <li>
+                <a href="#application">
+                    <img src="images/application1.svg">
+                    <span>应用</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#library">
+                    <img src="images/volume library1.svg">
+                    <span>卷库</span>
+                </a>
+            </li>
+            <li><a href="#accumulate">
+                    <img src="images/accumulation1.svg">
+                    <span>积累</span>
+                </a></li>
+            <li><a href="#link">
+                    <img src="images/link1.svg">
+                    <span>链接</span>
+                </a></li>
+        </ul>
+        <span>
+            <img src="images/backTop.svg">
+        </span>
+    </nav>
+    <div class="wrap">
+        <div class="main">
+            <div class="content">
+                <div class="application" id="application">
+                    <div class="card-header">
+                        <span class="card-img"><img src="images/application1.svg"></span>
+                        <!--图片大小为32*32-->
+                        <em class="card-title">应用</em>
+                    </div>
+                    <div class="application-wrap"></div>
+                </div>
+                <div class="library" id="library">
+                    <div class="card-header">
+                        <span class="card-img"><img src="images/volume library1.svg"></span>
+                        <em class="card-title">卷库</em>
+                        <a href="#" target="_blank" class="library-more">更多</a>
+                    </div>
+                    <div class="library-wrap"></div>
+                </div>
+                <div class="accumulate" id="accumulate">
+                    <div class="card-header">
+                        <span class="card-img"><img src="images/accumulation1.svg"></span>
+                        <em class="card-title">日积月累</em>
+                    </div>
+                    <div class="accumulate" id="accumulate">
+                        
+                        <div class="accumulate-wrap">
+                            <div class="accumulate-learn">
+                                <span class="showAll">每日推荐</span>
+                                <div class="choose">
+                                    <span class="num">1/1</span>
+                                    <span class="pre"><img src="./images/left.svg" alt="" /></span>
+                                    <span class="next"><img src="./images/right.svg" alt="" /></span>
+                                </div>
+                                <div class="word-wrap"></div>
+                            </div>
+                            <div class="accumulate-slideshow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link" id="link">
+                    <div class="card-header">
+                        <span class="card-img"><img src="images/link1.svg"></span>
+                        <em class="card-title">友情链接</em>
+                    </div>
+                    <div class="link-wrap"></div>
+                </div>
+            </div>
+            <div class="infor">
+                <!-- 排行榜 -->
+                <div class="list">
+                    <div class="rank">
+                        <!-- 顶部索引栏 -->
+                        <div class="rank-btn">
+                            <div class="day on"><span>🎖️</span>日榜</div>
+                            <div class="week"><span>🎖️</span>周榜</div>
+                            <div class="month"><span>🎖️</span>月榜</div>
+                        </div>
+                        <!-- 排行榜内容 -->
+                        <div class="rank-content">
+                            <!-- 日排行榜盒子 -->
+                            <div class="day">
+                                <ul></ul>
+                            </div>
+                            <!-- 周排行榜盒子 -->
+                            <div class="week">
+                                <ul></ul>
+                            </div>
+                            <!-- 月排行榜盒子 -->
+                            <div class="month">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 轮播图 -->
+                <div class="slideshow"></div>
+
+                <!-- 推送 -->
+                <div class="push">
+                    <div id="container">
+                        <h4>社区推荐</h4>
+                        <div class="box">
+                            <div>
+                                <a href="http://dict.eudic.net/ting/">
+                                    <img src="images/listen.jpg">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="http://dict.eudic.net/ting/">
+                                    <p>英语听力推荐</p>
+                                </a>
+                                <span>原创 16</span>
+                                <span>粉丝 642</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div>
+                                <a href="https://www.wordhippo.com/">
+                                    <img src="images/Word.jpg">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="https://www.wordhippo.com/">
+                                    <p>英语单词推荐</p>
+                                </a>
+                                <span>原创 122</span>
+                                <span>粉丝 286</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div>
+                                <a href="http://www.qqenglish.com/">
+                                    <img src="images/read.jpg">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="http://www.qqenglish.com/">
+                                    <p>英语阅读推荐</p>
+                                </a>
+                                <span>原创 596</span>
+                                <span>粉丝 15664</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div>
+                                <a href="https://www.quickanddirtytips.com/grammar-girl">
+                                    <img src="images/grammar.jpg">
+                                </a>
+                            </div>
+                            <div class="text">
+                                <a href="https://www.quickanddirtytips.com/grammar-girl">
+                                    <p>英语语法推荐</p>
+                                </a>
+                                <span>原创 460</span>
+                                <span>粉丝 22525</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="discuss">
+                        <h4>等你来答</h4>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="./discuss/discuss.html">怎么学好英语?</a>
+                                    <span>9个回答</span>
+                                </li>
+                                <li>
+                                    <a href="./discuss/discuss.html">英语听力反复练习总是不能提高，有什么好多方法推荐吗?</a>
+                                    <span>8个回答</span>
+                                </li>
+                                <li>
+                                    <a  href="./discuss/discuss.html">怎么样才能从英语很糟糕的人变成英语很厉害的人?</a>
+                                    <span>3个回答</span>
+                                </li>
+                                <li>
+                                    <a  href="./discuss/discuss.html">有哪些高级的英语表达技巧，让人一听就觉得很地道?</a>
+                                    <span>4个回答</span>
+                                </li>
+                                <li>
+                                    <a  href="./discuss/discuss.html">关于英语学习，我想说的是......?</a>
+                                    <span>5个回答</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="comment">
+                        <p>你喜欢此首页嘛？</p>
+                        <div id="icon">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon5.svg">
+                                        <span class="text">很不喜欢</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon4.svg">
+                                        <span class="text">不喜欢</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon3.svg">
+                                        <span class="text">一般般</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon2.svg">
+                                        <span class="text">喜欢</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon1.svg">
+                                        <span class="text">非常喜欢</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/packaging.js"></script>
+<script src="./js/rankTable.js"></script>
+
+</html>

@@ -1,0 +1,322 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body {
+  min-width: 1400px;
+}
+
+/* 头部样式 */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  min-width: 1300px !important;
+  z-index: 99;
+  border-bottom: 1px solid rgb(57,125,252);
+}
+
+header .logo {
+  width: 50px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+header .logo img {
+  width: 40px;
+}
+
+header .logo h2 {
+  position: absolute;
+  width: 100px;
+  top: -5px;
+  left: 60px;
+  color: rgb(57,125,252);
+}
+
+header .logo h5 {
+  position: absolute;
+  width: 100px;
+  top: 28px;
+  left: 60px;
+  color: rgb(57,125,252);
+}
+
+header .time {
+  height: 40px;
+  border: 1px solid #00f;
+  margin-top: 15px;
+  flex: 2;
+}
+
+header .user {
+  height: 40px;
+  margin-top: 15px;
+  flex: 1;
+}
+
+header .user {
+  position: absolute;
+  right: 80px;
+  cursor: pointer;
+}
+
+header .user img {
+  margin-right: 5px;
+  width: 35px;
+  border-radius: 50%;
+  vertical-align: middle;
+
+}
+
+/* 主体内容样式 */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content:flex-start;
+  width: 1600px;
+  min-height: 1000px;
+  margin: 30px auto;
+  padding: 20px 35px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(57, 125, 252, 0.37);
+  
+}
+.content .nav {
+  width: 100%;
+  height: 29px;
+  text-align: center;
+  border-bottom:1px solid rgb(57,125,252) ;
+}
+/* 左侧盒子样式 */
+.content-left {
+  width: 15%;
+  min-height: 1200px;
+  border-right: 1px solid rgb(57,125,252);
+}
+
+.content-left .personal {
+  height: 165px;
+  text-align: center;
+  background:rgba(81, 177, 255, 0.13);
+}
+
+.content-left .personal img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+
+.content-left .list ul {
+  line-height: 65px;
+  padding: 15px;
+}
+
+.content-left .list li {
+  cursor: pointer;
+}
+
+.content-left .list li img:nth-child(2) {
+  display: none;
+}
+
+.content-left .list li.on,
+.content-left .list li.hover {
+  color:rgb(57,125,252);
+}
+
+.content-left .list li.on img:nth-child(1),
+.content-left .list li.hover img:nth-child(1) {
+  display: none;
+}
+
+.content-left .list li.on img:nth-child(2),
+.content-left .list li.hover img:nth-child(2){
+ display: inline;
+}
+
+.content-left .list img {
+  position: relative;
+  top: 5px;
+  margin: auto 20px;
+}
+
+
+/* 右侧盒子样式 */
+.content-right {
+  padding-left: 40px;
+  width: 82%;
+  height: 100%;
+  overflow: auto;
+}
+
+.content-right > div {
+  display: none;
+}
+
+.content-right > div:first-child {
+  display: block;
+}
+
+/* 个人资料盒子 */
+.my-data {
+  line-height: 60px;
+}
+
+.my-data h3 {
+  color:rgb(57,125,252);
+}
+
+.my-data .icon span,.my-data .icon button {
+  position: relative;
+  top:-20px;
+}
+
+.my-data .icon img {
+  margin-top: 15px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.my-data div span:first-child {
+  margin-right: 20px;
+}
+
+.my-data button {
+  border: none;
+  width: 50px;
+  height: 30px;
+  background-color: rgb(57,125,252);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.user_phone button,.icon button {
+  margin-left: 40px;
+  
+}
+
+.sex span input:last-child {
+  margin-left: 40px;
+}
+
+.age select {
+  width: 100px;
+  height: 25px; 
+}
+
+.email input {
+  height: 30px;
+  padding: 0px 5px;
+  margin-bottom: 30px;
+}
+
+.age select,.email input,.signa textarea {
+  outline: none;
+  border: 1px solid rgb(57,125,252);
+  border-radius: 5px;
+}
+
+.my-data #setData {
+  width: 100px;
+  margin-left: 20%;
+}
+
+.signa textarea {
+  resize:none;
+  padding: 10px;
+}
+
+.signa span {
+  position: relative;
+  top:-160px;
+}
+
+
+/* 学习记录盒子与错题记录盒子 */
+.titles .title {
+  width: 95%;
+  margin: 20px 0px;
+  padding: 10px 20px;
+  border: 1px solid rgb(57,125,252);
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+.titles .false div.checked{
+  background-color: rgb(253,226,226);
+}
+
+.titles .true div.checked{
+  background-color: rgb(225,243,216);
+}
+
+.title-write textarea {
+  resize: none;
+  outline: none;
+  font-size: large;
+  border: 1px solid rgba(64, 160, 255, 0.849);
+  border-radius: 5px;
+}
+
+.study .num, .wrong .num {
+  margin-top: 10px;
+  color:rgb(57,125,252);
+
+}
+
+
+.page {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(168, 167, 167);
+  overflow: hidden;
+  user-select: none;
+}
+
+.page a {
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0 4px;
+  min-width: 24px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #4d555d;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.page #total {
+  color: red;
+  display: inline-block;
+}
+
+.page input {
+  width: 40px;
+  outline: none;
+}
+
+.page .pages {
+  display: inline-block;
+  height: 40px;
+  max-width: 340px;
+  overflow: hidden;
+  position: relative;
+  top: 15px;
+}
+
+.page .page-num:hover{
+  background-color: #d9dde1;
+}

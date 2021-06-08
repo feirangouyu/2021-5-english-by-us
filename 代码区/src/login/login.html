@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- LOGO -->
+        <div class="logo-content">
+            <img src="images/logo1.svg">
+        </div>
+
+        <!-- 标题 -->
+        <div id="title-box">
+            <div class="title-content title-fir">
+                <span>一遍过</span>
+
+            </div><br />
+            <div class="title-content title-sec ">
+                <span>yibianguo.com</span>
+
+            </div>
+        </div>
+        <div class=" title-content title-thi ">
+            <span> 感知教育 , 润泽成长 </span>
+        </div>
+
+        <!-- 链接 -->
+        <div class="link link-content ">
+            <a href="#" target="_blank">返回首页</a>
+            <a href="#" target="_blank">关于我们</a>
+            <a href="#" target="_blank">一遍过产品下载</a>
+        </div>
+
+        <!-- 服务窗口 -->
+        <div class="service-content ">
+            <div class="service-box">
+                <img src="images/code.png">
+                <p>扫码关注服务号获得更多便捷体验</p>
+            </div>
+            <img src="images/woman.jpg">
+        </div>
+
+
+        <div class="loginBox">
+            <div class="login">
+                <!-- 登录框头部信息 -->
+                <div class="head login-header">
+                    <img src="./images/logo1.svg" id="loginLogo">
+                    <div id="loginAcc">
+                        <p>账号登录</p>
+                        <span class="login-account"></span>
+                    </div>
+                    <div id="loginSweep">
+                        <p>手机扫码登录</p>
+                        <span class="login-sweep"></span>
+                    </div>
+                </div>
+
+                <!-- 登录框文本信息 -->
+                <div class="login-content">
+                    <!-- 二维码扫描登录 -->
+                    <div class="login-sweep">
+                        <div id="qrcode"></div>
+                        <p>打开一遍过手机APP进入"个人中心"扫码登录</p>
+                        <a href="#">点击下载手机客户端</a>
+                    </div>
+
+                    <!-- 手机号账号密码登录 -->
+                    <div class="content1 login-account">
+                        <label for="loginUser"><input type="text" id="loginUser" placeholder="请输入手机号/用户名"></label>
+                        <label for="loginPass"><input type="password" id="loginPass" placeholder="请输入密码"></label>
+                        <!-- 滑块验证码 -->
+                        <div class="ckbox">
+                            <div class="container">
+                                <div id="captcha" style="position: relative"></div>
+                            </div>
+                        </div>
+                        <p></p>
+                        <button id="login">登录</button>
+                    </div>
+
+                </div>
+
+
+                <!-- 登录框底部提示信息 -->
+                <div class="login-options">
+                    <a href="#" class="login-account">忘记密码</a>
+                    <a href="#" id="goReg">立即注册</a>
+                </div>
+            </div>
+
+            <div class="register">
+                <!-- 注册框头部信息 -->
+                <div class="head register-header">
+                    <img src="./images/logo1.svg" id="loginLogo">
+                    <span>注册</span>
+                    <span id="goLogin">返回登录</span>
+                </div>
+
+                <!-- 注册框文本信息 -->
+                <div class="content1 register-content">
+                    <label for="regPhone"><input type="text" id="regPhone" placeholder="请输入手机号"></label>
+                    <label for="regUser"><input type="text" id="regUser" placeholder="请输入用户名"></label>
+                    <label for="regPass"><input type="password" id="regPass" placeholder="请输入密码"></label>
+                    <label for="regCode"><input type="text" id="regCode" placeholder="请输入短信验证码"></label>
+                    <span id="getReg">获取验证码</span>
+                    <button id="register">注册</button>
+                </div>
+
+                <!-- 注册框底部提示信息 -->
+                <div class="register-options">
+                    <label for="agree"><input type="checkbox" id="agree" value="agree">我已认真阅读并同意一遍过的</label>
+                    <span>《使用协议》</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    <script src="container.js"></script>
+    <script src="login.js"></script>
+    
+</body>
+
+</html>

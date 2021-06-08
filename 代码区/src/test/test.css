@@ -1,0 +1,94 @@
+
+.test {
+  margin: auto;
+  width: 1020px;
+}
+
+.test .header {
+  border-bottom: 2px solid rgba(64, 160, 255, 0.39);
+}
+
+.test .header h2,.test .footer {
+  text-align: center;
+}
+
+.test .header p:last-child {
+  text-align: end;
+}
+
+.test .header p  span{
+  color: rgb(64,158,255);
+}
+
+.test .header a{
+  text-decoration: none;
+  color: black;
+}
+
+.test .header a:hover{
+  color: rgb(64,158,255);
+}
+
+.test .title {
+  padding: 20px 0px;
+  border-top: 1px solid rgba(64, 160, 255, 0.39);
+  line-height: 50px;
+}
+
+.test .title-write textarea {
+  resize: none;
+  outline: none;
+  font-size: large;
+  border: 1px solid rgba(64, 160, 255, 0.849);
+  border-radius: 5px;
+}
+
+.test .footer {
+  margin-bottom: 50px;
+}
+
+.test  button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: rgb(64,158,255);
+  color: white;
+  border-radius: 5px;
+}
+
+.test input,.test button {
+  cursor: pointer;
+}
+
+.test .false, .test .true  {
+  word-break: break-word;
+}
+
+.test .false {
+  background-color: rgb(253,226,226) ;
+}
+
+.test .true {
+  background-color: rgb(225,243,216) ;
+}
+
+.result {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -120px;
+  margin-left: -175px;
+  width: 350px;
+  height: 250px;
+  /* border:1px solid rgb(64,158,255); */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 1px rgba(64, 160, 255, 0.376);
+  text-align: center;
+}
+
+.result span {
+  color: rgb(64,158,255);
+}
+

@@ -1,0 +1,50 @@
+{
+    "linkData": [
+        {"name": "百词斩","url": "http://baicizhan.com/"},
+        {"name": "扇贝","url": " https://web.shanbay.com/web/main"},
+        {"name": "星火英语","url": "https://www.sparke.cn/"},
+        {"name": "中国教育考试网","url": "http://cet.neea.edu.cn/"},
+        {"name": "CET","url": "http://cet-bm.neea.cn/ "}
+    ],
+    "useData": [
+        {"name": "每日一练","img": "./images/yinyon1.png","url": ""},
+        {"name": "在线练习","img": "./images/yinyon2.png","url": "./practice/practice.html"},
+        {"name": "单词练习","img": "./images/yinyon3.png","url": ""},
+        {"name": "在线pk","img": "./images/yinyon4.png","url": ""},
+        {"name": "讨论","img": "./images/yinyon5.png","url": ""}
+    ],
+    "libraryData": [
+        {"name": "2021年6月大学英语四级真题","img": "./images/title1.jpg","url": ""},
+        {"name": "2020年6月大学英语四级真题","img": "./images/title2.jpg","url": ""},
+        {"name": "2019年6月大学英语四级真题","img": "./images/title3.jpg","url": ""},
+        {"name": "2018年6月大学英语四级真题","img": "./images/title4.jpg","url": ""},
+        {"name": "2017年6月大学英语四级真题","img": "./images/title5.jpg","url": ""},
+        {"name": "2016年6月大学英语四级真题","img": "./images/title6.jpg","url": ""}
+    ],
+    "slideData":  [
+        {"img": "./images/1.png"},
+        {"img": "./images/2.png"},
+        {"img": "./images/3.png"},
+        {"img": "./images/4.png"},
+        {"img": "./images/5.png"}
+    ],
+    "wordData": [
+        {"en": "exert","translation": "vt.运用，施以影响；努力，尽力；","eg": " He exerted all his influence to make them accept his plan."},
+        {"en": "alter","translation": "vt.改变，改动，变更;","eg": "There is something wrong with my layout, | have to alter it."},
+        {"en": "dispose ","translation": "vi.除掉;处置;解决;处理(of);","eg": "Mum ordered me to dispose of these unfashionable clothes."},
+        {"en": "blast","translation": "n.爆炸;气流vi.炸，炸掉","eg": "Fortunately, no people injured in the blast."},
+        {"en": "consume","translation": "v.消耗，耗尽","eg": "To prepare for this exam, he consumed a great deal of time and energy."},
+        {"en": "split","translation": "v.劈开;割裂;分裂a.裂开的","eg":"The river splits this city into two parts."},
+        {"en": "spit","translation": "v.吐(唾液等);唾弃","eg":"It is very rude to spit in public."},
+        {"en": "spill","translation": "v.溢出，溅出，倒出","eg":"The glass was so full that the juice spilt."},
+        {"en": "slip","translation": "v.滑动，滑落;忽略","eg":"He was too tired to notice that the quilt was slipping."},
+        {"en": "slide","translation": "v. 滑动，滑落n.滑动;滑面;幻灯片","eg":"She slid out when her mother was answering a phone call."}
+    ],
+    "advertiseData": [
+        {"img": "./images/guangao1.png","url": "https://ke.study.163.com/course/detail/100083366?outVendor=zw_mooc_pcssjg_&from=searchPage"},
+        {"img": "./images/guangao2.jpg","url": "https://kaoyan.icourse163.org/course/terms/1206289223.htm?courseId=1205991821"},
+        {"img": "./images/guangao3.png","url": "https://ke.study.163.com/course/detail/100082939?outVendor=zw_mooc_pcssjg_&from=searchPage"},
+        {"img": "./images/guangao4.png","url": "https://kaoyan.icourse163.org/course/terms/1462760441.htm?from=searchPage&courseId=1461949163"}
+    ],
+    "navDate": ["四级","六级","专业八级","托福雅思"]
+}

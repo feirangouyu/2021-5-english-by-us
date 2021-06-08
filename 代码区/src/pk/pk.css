@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    user-select: none;
+}
+
+
+li {
+    list-style-type: none;
+}
+/* 头部样式 */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    min-width: 1300px !important;
+    z-index: 99;
+    border-bottom: 1px solid rgb(57,125,252);
+}
+
+header .logo {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+header .logo h2 {
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    left: 60px;
+    color: rgb(57,125,252);
+}
+
+header .logo h5 {
+    position: absolute;
+    width: 100px;
+    top: 28px;
+    left: 60px;
+    color: rgb(57,125,252);
+}
+
+
+.content {
+    width: 100%;
+
+    /* height: 650px; */
+    /* border: 1px solid #00f; */
+}
+/* 内容样式 */
+.content .wrap {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    min-width: 1300px !important;
+    margin-top: 10px;
+    position: relative;
+}
+
+.wrap .wrap-header {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgb(57,125,252);
+    display: flex;
+}
+
+.wrap .wrap-header  img {
+    position: relative;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.wrap .wrap-header em {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    color: rgb(57,125,252);
+}
+
+.wrap .wrap-header a {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+.wrap-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.wrap-content .wrap-game {
+    width: 70%;
+    height: 600px;
+    /* border: 1px solid #f0f; */
+}
+
+.wrap-content .wrap-game div {
+    width: 600px;
+    height: 130px;
+    border: 1px solid rgb(57,125,252);
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.wrap-content .wrap-game div span {
+    font-size: 24px;
+    height: 130px;
+    line-height: 130px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.wrap-content .wrap-game div span  :hover {
+    transform: translate(0,-10px);
+}
+
+.wrap-content .wrap-game div img {
+    position: absolute;
+    right: 50px;
+}
+
+.wrap-content .userifor {
+    width: 400px;
+    height: 550px;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: 1px solid rgb(57,125,252);
+}
+
+.wrap-content .userifor .myifor {
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrap-content .userifor li {
+    margin-top: 20px;
+    margin-left: 40px;
+    height: 80px;
+    line-height: 80px;
+    width: 80%;
+    border-bottom: 1px solid rgb(57,125,252);
+}
+
+.wrap-content .userifor li span {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    right: 20px;
+}
+
+.wrap-game > div:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+
+/* 房间盒子 */
+.room {
+    display: none;
+    position: relative;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -500px;
+    padding: 35px 25px;
+    width: 1000px;
+    height: 700px;
+    border-radius: 5px;
+    border: 1px solid rgb(133, 130, 130);
+    background-color: white;
+    z-index: 9999;
+}
+
+.room-head {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.room-head > span:last-child {
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    margin-left: 75%;
+    background-color: rgb(64,158,255);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.room-list {
+    padding: 15px 25px;
+    height: 630px;
+    box-shadow: 0px 0px 2px 2px rgba(64, 160, 255, 0.158);
+    border:1px solid rgb(64,158,255);
+    border-radius: 5px;
+}
+
+.room-list .test {
+    height: 30px;
+}
+
+.room-list .test span{
+    margin-right: 720px;
+}
+
+.room-list .test img{
+    position: relative;
+    left: 130px;
+    top: 2px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.room-list .test input{
+    width: 130px;
+    height: 22px;
+    outline: none;
+    border: 1px solid rgb(64,158,255);
+    border-radius: 10px;
+    padding-left: 6px;
+}
+
+.list {
+    margin-top: 20px;
+    padding: 2px;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+
+
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 35px;
+    padding: 0px 50px;
+}
+
+.list .room-box {
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    width: 270px;
+    height: 160px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(64, 160, 255, 0.733);
+}
+
+.list .room-box:hover {
+    border: 1px solid rgb(64,158,255);
+}
+
+.list .room-box img{
+    position: relative;
+    top:10px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.list .room-box button {
+    margin-left: 65%;
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(64,158,255);
+    color: white;
+}
+
+.shut img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    cursor: pointer;
+}

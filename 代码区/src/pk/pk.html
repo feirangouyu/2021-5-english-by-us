@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线pk</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+    <link rel="stylesheet" href="./pk.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo1.svg">
+            <h2>一 遍 过</h2>
+            <h5>yibianguo.com</h5>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="wrap">
+            <!-- 内容头部 -->
+            <div class="wrap-header">
+                <img src="./images/PK.svg" alt="">
+                <em>在线对战</em>
+                <a href="#" class="back"> < 返回首页</a>
+            </div>
+            <div class="wrap-content">
+                <!-- pk模式选择 -->
+                <div class="wrap-game">
+                    <div class="gameOne">
+                        <span>单词pk</span>
+                        <img src="./images/win1.svg" alt="">
+                    </div>
+                    <div class="gameSen">
+                        <span>选词pk</span>
+                        <img src="./images/win2.svg" alt="">
+                    </div>
+                    <div class="gameThr">
+                        <span>阅读pk</span>
+                        <img src="./images/win3.svg" alt="">
+                    </div>
+                </div>
+                <!-- 个人信息 -->
+                <div class="userifor">
+                    <span class="myifor">我的信息</span>
+                   <ul>
+                       <li>用户名  <span class="name"></span></li>
+                       <li>用户昵称 <span>种子选手</span></li>
+                       <li>pk积分 <span class="pk_integral"></span></li>
+                       <li>胜率  <span class="pk_win"></span></li>
+                   </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="room">
+        <div class="shut"> <img src="./images/shut.svg"></div>
+        <div class="room-head">
+            <span>玩家名称：<span class="name">huwen</span></span>
+            <span id="addRoom"><img src="./images/add.svg"> 新建房间</span>
+        </div>
+
+        <div class="room-list">
+            <div class="test">
+                <span >在线加入</span>
+                <label for="search"><img src="./images/search.svg" ><input type="text" placeholder="搜索房间号" id="search"></label>
+            </div>
+
+            <div class="list">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="./pk.js"></script>
+</html>

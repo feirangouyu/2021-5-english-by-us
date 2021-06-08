@@ -1,0 +1,101 @@
+.wrapper>div {
+    width: 100%; 
+    display: flex;
+    background-color: #f6f6f6;
+    min-height: 900px;
+}
+
+.wrapper>div .item {
+    width: 100%;
+    /* border:1px solid; */
+    box-sizing: border-box;    
+}
+
+.wrapper>div .item .question-item {
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+.wrapper>div .item .question-item .item-content {margin-left: 20px}
+
+.wrapper>div .item .question-item .item-box span {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper>div .item .question-item .write {
+    width: 100%;
+    height: 300px;
+}
+
+.wrapper>div .item .question-item .write .text {
+    height: 240px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper>div .item .reply {
+    min-height: 300px;
+    /* border: 1px solid#000; */
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.wrapper>div .item .reply>span {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-family: bold;
+    padding-left: 20px;
+    border-bottom: 1px solid #e2e1e1;
+    box-sizing: border-box;
+}
+
+.wrapper>div .item .reply .isReply {
+    color: #918c8c;
+    display: inline-block;
+    height: 250px;
+    line-height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper>div .item .reply .reply-item {
+    width: 100%;
+    padding: 0 20px 10px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #f6f6f6;
+}
+
+.reply .reply-item .user {
+    position: relative;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.reply .reply-item>div .user img {
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.reply .reply-item>div .user .like {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    color: #8590A6;
+    font-size: 16px;
+}
+
+.reply .reply-item>div .item .item-number,
+.reply .reply-item>div .item .item-time{
+    color: #8590A6;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}

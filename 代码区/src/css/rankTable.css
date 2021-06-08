@@ -1,0 +1,100 @@
+.rank {
+  width: 400px;
+  min-height: 400px;
+  padding: 5px 0px;
+  /* box-shadow: 0px 0px 1px 1px rgb(57,125,252); */
+  background-color: white;
+}
+
+.rank .rank-btn {
+  display: flex;
+  justify-content: space-around;
+  line-height: 30px;
+}
+
+.rank .rank-btn > div {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rank .rank-btn > div span{
+  display: none;
+}
+
+.rank .rank-btn .on {
+  border-bottom: 2px solid rgb(57,125,252);
+  border-top: none;
+  color: rgb(57,125,252);
+  font-weight: bolder;
+}
+
+.rank .rank-btn .on span{
+  display: inline;
+}
+
+.rank .rank-content > div {
+  display: none;
+}
+
+.rank .rank-content .day {
+  display: block;
+}
+
+
+.rank ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px 30px;
+}
+
+.rank ul li {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  height: 60px;
+}
+
+.rank .rank-content img.icon {
+  width: 25px;
+  height: 40px;
+}
+
+.rank .rank-content img.avatar {
+  margin: auto 20px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.rank .rank-content ul div {
+  height: 100%;
+  width: auto;
+}
+
+.rank .rank-content ul div:last-child {
+  width: 100%;
+}
+
+
+
+.rank .rank-content ul div span:last-of-type {
+  float: right;
+  color: rgb(57,125,252);
+  font-size: small;
+}
+
+.rank .rank-content ul div p {
+  margin: 5px auto;
+  height: 20px;
+  overflow: hidden;
+  color: rgb(129, 125, 125);
+  font-size: small;
+}
+
+.rank .rank-content ul div:first-child p {
+  width: 25px;
+  height: 40px;
+  font-size: larger;
+  line-height: 40px;
+  color: black;
+}

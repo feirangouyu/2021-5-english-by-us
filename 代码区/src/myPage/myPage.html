@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人空间</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+
+  <link rel="stylesheet" href="./myPage.css">
+</head>
+<body>
+  <div class="my-page">
+    <!-- 头部内容 -->
+    <header>
+      <div class="logo"><img src="../images/logo1.svg">
+          <h2>一 遍 过</h2>
+          <h5>yibianguo.com</h5>
+      </div>
+      <div class="user" id="onLogin">
+          <img class="icon-src" src="./images/nologin.svg">
+          <span class="name">登录</span>
+      </div>
+    </header>
+    <!-- <div class="header">
+      <div class="home"><p>学英语，就来一遍过英语学习平台！</p></div>
+      <div class="data">
+        <img class="icon-src" src="">
+        <span class="name"></span>
+      </div>
+    </div> -->
+    <!-- 主体内容 -->
+    <div class="content">
+      <div class="nav">个人中心</div>
+      <!-- 左侧盒子 -->
+      <div class="content-left">
+        <div class="personal">
+          <div><img class="icon-src" src=""></div>
+          <div><p class="name"></p></div>
+        </div>
+        <div class="list">
+          <ul>
+            <li class="my-data on"><img src="images/myData.svg"><img src="images/myData_on.svg"><span>个人资料</span></li>
+            <li class="study"><img src="images/study.svg"><img src="images/study_on.svg"><span>学习记录</span></li>
+            <li class="wrong"><img src="images/wrong.svg"><img src="images/wrong_on.svg"><span>错题集</span></li>
+            <li class="back"><img src="images/back.svg"><img src="images/back_on.svg"><span>退出</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 右侧盒子 -->
+      <div class="content-right">
+         <!-- 个人资料盒子 -->
+        <div class="my-data" >
+          <h3>个人资料</h3>
+          <div class="user_name"><span>用户名称:</span><span class="name"></span></div>
+          <div class="integral"><span>学习积分:</span><span></span></div>
+          <div class="user_phone"><span>手机号码:</span><span></span><button>修改</button></div>
+
+          <div class="icon">
+            <span>用户头像:</span>
+            <img class="icon-src"  src="">
+            <button>上传</button>
+          </div>
+
+          <div class="sex">
+            <span>用户性别:</span>
+            <span>
+                <input type="radio" name="sex" value="男" > 男
+                <input type="radio" name="sex" value="女"> 女
+            </span>
+          </div>
+          <div class="age">
+            <span>用户年龄:</span>
+            <select name="cars">
+              <option value="0">未知</option>
+              
+              </select>
+          </div>
+          <div class="email"><span>用户邮箱:</span><input type="text" placeholder="请填入您的邮箱信息"></div>
+          <div class="signa"><span>个性签名:</span><textarea cols="80" rows="10"  placeholder="请填入您的邮箱信息"></textarea></div>
+          
+          <button id="setData">保存</button>
+          
+        </div> 
+        
+        <!-- 学习记录盒子 -->
+        <div class="study" >
+          <h3 class="num">共计学习记录<span></span>条</h3>
+          <div class="titles"></div>
+          <div class="page">
+            <span>第<span id="total">1/1</span>页</span>
+            <a class="pre-page">上一页</a>
+            <span class="pages"></span>
+            <a class="next-page">下一页</a>
+            <span class="skip">跳转到 <input autocomplete="off"> 页</span>
+            <a class="ensure">确定</a>
+          </div>
+        </div>
+
+        <!-- 错题记录盒子 -->
+        <div class="wrong">
+          <h3 class="num">共计错题记录<span></span>条</h3>
+          <div class="titles"></div>
+          <div class="page">
+            <span>第<span id="total">1/1</span>页</span>
+            <a class="pre-page">上一页</a>
+            <span class="pages"></span>
+            <a class="next-page">下一页</a>
+            <span class="skip">跳转到 <input autocomplete="off"> 页</span>
+            <a class="ensure">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./myPage.js"></script>
+  <script src="../js/packaging.js"></script>
+</body>
+</html>

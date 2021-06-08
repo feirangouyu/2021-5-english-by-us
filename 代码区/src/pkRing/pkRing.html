@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pk擂台</title>
+  <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+  <link rel="stylesheet" href="./pkRing.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <div class="logo">
+        <img src="../images/logo1.svg">
+        <h2>一 遍 过</h2>
+        <h5>yibianguo.com</h5>
+    </div>
+</header>
+
+  <div class="main">
+    
+    <!-- 结束盒子 -->
+    <div class="pk-end ">
+        <h3>游戏结束！</h3>
+        <h3>获胜者: <span class="win_user">hu</span></h3>
+        <div>
+          <div>
+            <img src="https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/70bf09e5960dfc4e3abd769a1ca45c32~300x300.image" class="user_icon1">
+            <p class="name1">huwen</p>
+            <p>获得积分: <span class="integral1"></span></p>
+          </div>
+
+          <div>
+            <img src="https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/70bf09e5960dfc4e3abd769a1ca45c32~300x300.image" class="user_icon2">
+            <p class="name2">zouyun</p>
+            <p>获得积分: <span class="integral2"></span></p>
+          </div>
+        </div>
+    </div>
+
+    <!-- 等待玩家盒子 -->
+    <div class="player-wait">
+      <div>
+        <div><img src="" class="user_icon1"><p class="name1"></p></div>
+        <div>---------------</div>
+        <div><img src="./images/player.svg" class="user_icon2"><p class="name2">正在寻找</p></div>
+        
+      </div>
+      <p class="start">正在寻找队友中，请耐心等待</p> <br>
+      <p>已等待: <span class="time">0</span>s</p>
+   </div>   
+    
+  </div>
+
+  <img class="leitai" src="./images/leitai.svg" >
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./pkRing.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>题库</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo1.svg">
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script>
+        //判断是移动端还是pc端
+        function version() {
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                return false
+            } else {
+                return true
+            }
+        }
+        if(version() === true) {
+            $('head').append('<link rel="stylesheet" href="./library.css">')
+        } else {
+            $('head').append('<link rel="stylesheet" href="./mobileStyle.css">')
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="library-logo">
+            <span class="card-img">1</span>
+            <em class="card-title">历年真题</em>
+        </div>
+        <div class="search">
+            <input class="search-input" type="text" placeholder="请输入试卷名称" autocomplete="off">
+            <i><img src="../images/search.svg" alt=""></i>
+        </div>
+        <div class="navbar">
+            <span class="navbar-search">
+                <input type="text" placeholder="搜索试卷">
+                <img src="../images/search.svg" alt="">
+            </span>
+            <span><img src="../images/nav.svg" alt=""></span>
+        </div>
+    </header>  
+    <div class="wrapper">
+        <div class="wrap">
+            <nav>
+                <ul>
+                    <li><a href="#">全部</a></li>
+                </ul>
+            </nav>
+            <div class="library-wrap"></div>
+            <div class="page">
+                <span>第<span id="total">1/1</span>页</span>
+                <a class="pre-page">上一页</a>
+                <span class="pages"></span>
+                <a class="next-page">下一页</a>
+                <span class="skip">跳转到 <input autocomplete="off"> 页</span>
+                <a class="ensure">确定</a>
+            </div>
+        </div>
+       
+    </div>
+</body>
+<script src="../js/packaging.js"></script>
+<script src="./library.js"></script>
+</html>

@@ -1,0 +1,495 @@
+/* 
+    登录/注册页面样式 
+    @ huwen
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 1080px;
+    background: url("./images/login-bac.jpg")  0%  / 100% no-repeat;
+}
+
+
+.login,.register{
+    position: absolute;
+    top: 200px;
+    margin-left: -200px;
+    left: 50%;
+}
+
+
+
+.loginBox .head {
+    position: relative;
+    /* margin-bottom: 10px; */
+    font-size: 16px;
+    color: #333;
+    line-height: 38px;
+}
+
+.loginBox .content1 {
+    text-align: center;
+}
+
+.head img {
+    width: 50px;
+}
+
+.loginBox input[type= "text"],.loginBox input[type= "password"]{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #bfc2c5;
+    outline: none;
+    font-size: 16px;
+}
+
+.register input[type= "text"],.register input[type= "password"]{
+    margin: 12px;
+}
+
+.login .login-content input {
+    margin: 10px;
+}
+
+.loginBox button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(57,125,252);
+    outline: none;
+    color: white;
+    cursor: pointer;
+} 
+
+.loginBox  a:hover {
+    color: rgb(57,125,252);
+}
+
+
+.login,.register{
+    width: 350px;
+    height: 360px;
+    padding: 30px 40px 50px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgb(10 10 10 / 18%) 2px 2px 10px 1px;
+    color: #777777;
+}
+
+
+.login .login-header {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    line-height: 38px;
+}
+
+.login-header img, .register-header img {
+    width: 60px;
+
+}
+
+.login .login-header div{
+    position: absolute;
+    top:0px;
+    width: auto;
+}
+
+.login #loginAcc {
+    left: 100px;
+    color: rgb(57,125,252);
+}
+.login #loginSweep {
+    left: 210px;
+}
+
+.login #loginAcc:hover,.login #loginSweep:hover {
+    color: rgb(57,125,252);
+}
+
+.login .login-header span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(57,125,252);
+}
+
+
+.login .login-content {
+    height: 270px;
+    text-align: center;
+}
+
+/* .login .login-content button {
+    margin: 15px auto;
+} */
+
+.login .login-sweep {
+    text-align: center;
+}
+
+.login .login-sweep img {
+    margin-top: 30px;
+}
+
+.login .login-sweep p{
+    margin: 20px auto 10px;
+    font-size: 14px;
+}
+
+.login .login-sweep a{
+    font-size: 14px;
+    color: rgb(57,125,252);
+}
+
+.login .login-options a {
+    font-size: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.login .login-options a:nth-last-child(2){
+    float: left;
+    
+}
+
+.login .login-options a:last-child{
+    float: right;
+}
+
+.login-sweep {
+    display: none;
+}
+
+.login-header div {
+    cursor: pointer;
+}
+
+.register {
+    display: none;
+    height: 420px;
+}
+
+.register .register-header span {
+    position: absolute;
+}
+
+.register .register-header span:nth-child(2){
+    left: 130px;
+}
+
+.register .register-header span:nth-child(3){
+    left: 240px;
+    cursor: pointer;
+    color: rgb(57,125,252);
+}
+
+.register button{
+    margin: 20px auto 12px;
+}
+
+.register-options {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.register-content span {
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.register-options input {
+    margin-right: 5px;
+}
+
+.register-options span{
+    cursor: pointer;
+    color: rgb(57,125,252);
+}
+.register-options span:hover{
+    text-decoration: underline;
+}
+
+.loginBox label[for="agree"] {
+    cursor: pointer;
+}
+
+.register-content label {
+    position: relative;
+}
+
+.register .register-content .reg {
+    position: absolute;
+    left: 8px;
+    top:35px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(57,125,252);
+}
+
+
+/* 滑块验证码 */
+
+.loginBox .login .ckbox {
+	/* width: 270px; */
+    height: 20px;
+	margin: 30px auto;
+}
+ 
+.loginBox .container {
+	width: 310px;
+	margin: 30px auto;
+}
+ 
+.loginBox .ckbox a:link,
+.loginBox .ckbox a:visited,
+.loginBox .ckbox a:hover,
+.loginBox .ckbox a:active {
+	margin-left: 100px;
+	color: #0366D6;
+}
+ 
+
+ 
+.loginBox .sliderContainer {
+	position: relative;
+	position: absolute;
+    top:-10px;
+    margin-left: 5px;
+	text-align: center;
+	width: 295px;
+	height: 40px;
+	line-height: 40px;
+	
+	background: #f7f9fa;
+	color: #45494c;
+	border: 1px solid #e4e7eb;
+    font-size: 14px;
+}
+ 
+.loginBox .sliderContainer_active .slider {
+	height: 38px;
+	top: -1px;
+	border: 1px solid #1991FA;
+}
+ 
+.loginBox .sliderContainer_active .sliderMask {
+	height: 38px;
+	border-width: 1px;
+}
+ 
+.loginBox .sliderContainer_success .slider {
+	height: 38px;
+	top: -1px;
+	border: 1px solid #52CCBA;
+	background-color: #52CCBA !important;
+}
+ 
+.loginBox .sliderContainer_success .sliderMask {
+	height: 38px;
+	border: 1px solid #52CCBA;
+	background-color: #D2F4EF;
+}
+ 
+
+.loginBox .sliderContainer_fail .slider {
+	height: 38px;
+	top: -1px;
+	border: 1px solid #f57a7a;
+	background-color: #f57a7a !important;
+}
+ 
+.loginBox .sliderContainer_fail .sliderMask {
+	height: 38px;
+	border: 1px solid #f57a7a;
+	background-color: #fce1e1;
+}
+ 
+
+ 
+.loginBox .sliderContainer_active .sliderText,
+.loginBox .sliderContainer_success .sliderText,
+.loginBox .sliderContainer_fail .sliderText {
+	display: none;
+}
+ 
+.loginBox .sliderMask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px;
+	border: 0 solid #1991FA;
+	background: #D1E9FE;
+}
+ 
+.loginBox .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: background .2s linear;
+}
+ 
+ 
+.loginBox canvas {
+    display: none;
+    position: absolute;
+    top: -155px;
+    left: 5px;
+} 
+
+
+.loginBox canvas:first-child {
+    background: white;
+}
+ 
+.loginBox #captcha {
+	position: absolute;
+	top: 0px;
+}
+
+.loginBox .login-account p {
+    display: none;
+    position: relative;
+    left: -80px;
+    top: -10px;
+    font-size: 12px;
+    color: rgb(57,125,252);
+}
+
+
+.loginBox #qrcode img{
+    margin: 0px auto;
+}
+
+.login-content .login-sweep {
+    padding-top: 5px;
+}
+
+
+
+.logo-content {
+    position: relative;
+    float: left;
+    z-index: 1;
+    width: 60px;
+    height: 75px;
+    padding: 5px;
+    margin: 45px 10px auto 100px;
+    border: 1px dashed #2fa1fe00;
+}
+
+.logo-content img {
+    width: 55px;
+    height: 70px;
+}
+
+#title-box {
+    float: left;
+    margin:45px 0px 0px -10px;
+}
+
+.title-content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding:0px 5px;
+    font-weight: bold;
+    color: rgb(57,125,252);
+    border: 1px dashed #2fa1fe00;
+}
+
+.title-fir {
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+.title-fir .button-set {
+    top: -27px;
+    left: -1px;
+    border-bottom: none;
+}
+
+.title-sec {
+    font-size: 13px;
+}
+
+.title-sec .button-set {
+    bottom: -27px;
+    left: -1px;
+    border-top: none;
+}
+
+.title-thi {
+    margin: 55px 5px;
+    font-size: 18px;
+}
+
+
+.link-content {
+    position: absolute;
+    top:45px;
+    right: 110px;
+    padding: 10px;
+    height: 30px;
+    border: 1px dashed #2fa1fe00;
+
+}
+
+.link-content a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #555f69;
+    text-decoration: none;
+}
+
+.service-content {
+    position: relative;
+    position: absolute;
+    right: 0px;
+    top:310px ;
+
+    width: 90px;
+    height: 125px;
+    padding: 15px 10px 25px 20px;
+    background-color: white;
+    border: 1px dashed white;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: #d4dae0 -2px 5px 10px 1px;
+    color: #555f69;
+    font-size: 14px;
+}
+
+.service-content > img {
+    position: absolute;
+    top:-100px;
+    left: 20px;
+}
+
+.service-content .service-box > img {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 5px;
+}
+
+
+#notFound {
+    position:absolute;
+    top: 40%;
+    left: 50%;
+}
