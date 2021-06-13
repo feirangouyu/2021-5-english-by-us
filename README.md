@@ -8,17 +8,26 @@
 1.在mysql中新建数据库，数据库名:english, 运行SQL文件：<代码区/english.sql>
 
 2.在<>文件修改配置参数，
- connection = mysql.createConnection({  
+
+connection = mysql.createConnection({
+ 
         host:"localhost", //主机名
+				
         user:"root", //mysql用户名
+				
         password:"123456", //mysql用户密码
+				
         port:"3306",   //mysql运行端口号
+				
         database:"english"   //数据库名
     });
     
 3.在根目录的终端下运行nodejs服务器
+
 nodemon server.js
+
 nodemon pkServer.js
 
 4.在项目环境下打开主页面
+
 <代码区/src/index.html>
