@@ -33,3 +33,7 @@ nodemon pkServer.js
 4.在项目环境下打开主页面
 
 <代码区/src/index.html>
+
+
+![image](https://user-images.githubusercontent.com/54969710/123645616-128f4400-d859-11eb-8e41-9501bc4fa76a.png)
+
