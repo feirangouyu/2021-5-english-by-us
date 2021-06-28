@@ -9,7 +9,7 @@
 
 1.在mysql中新建数据库，数据库名:english, 运行SQL文件：<代码区/english.sql>
 
-2.在<>文件修改配置参数，
+2.在<代码区/sqlList.js >文件修改配置参数，
 
 connection = mysql.createConnection({
  
