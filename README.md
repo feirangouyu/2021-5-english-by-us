@@ -37,8 +37,6 @@ nodemon pkServer.js
 ## 项目页面展示图：
 主页：
 ![image](https://user-images.githubusercontent.com/54969710/123645616-128f4400-d859-11eb-8e41-9501bc4fa76a.png)
-登录注册页面：
-![image](https://user-images.githubusercontent.com/54969710/123646286-a7923d00-d859-11eb-90a8-8d305e3bed14.png)
 答题页面：
 ![image](https://user-images.githubusercontent.com/54969710/123646475-d4465480-d859-11eb-8bdc-b0c107c2d04a.png)
 提交答题后页面：
